@@ -8,6 +8,10 @@
   --stone: #d8d5cf;
   --soft-green: #aeb9ac;
   --light: rgba(255, 250, 240, 0.85);
+  --section-space: 112px;
+  --hero-photo-width: 300px;
+  --mini-photo-left-width: 250px;
+  --mini-photo-right-width: 300px;
 }
 
 * {
@@ -22,7 +26,7 @@ body {
   margin: 0;
   background: var(--bg);
   color: var(--text);
-  font-family: "Zen Old Mincho", serif;
+  font-family: "Kosugi Maru", sans-serif;
 }
 
 a {
@@ -85,17 +89,17 @@ a {
 }
 
 .page {
-  width: min(100% - 36px, 860px);
+  width: min(100% - 36px, 760px);
   margin: 0 auto;
-  padding-bottom: 120px;
+  padding-bottom: 280px;
 }
 
 .section {
-  padding: 72px 0;
+  padding: 240px 0;
 }
 
 .hero {
-  padding-top: 44px;
+  padding-top: 140px;
   text-align: center;
 }
 
@@ -108,7 +112,7 @@ a {
 }
 
 .scene-card-large {
-  width: min(100%, 330px);
+  width: min(100%, var(--hero-photo-width));
   aspect-ratio: 3 / 5;
 }
 
@@ -162,7 +166,7 @@ a {
 
 .poem-layout {
   display: grid;
-  gap: 92px;
+  gap: 260px;
 }
 
 .poem-row {
@@ -171,38 +175,52 @@ a {
 }
 
 .poem-row-top {
-  grid-template-columns: 0.95fr 1.05fr;
-  gap: 24px;
+  grid-template-columns: 430px 1fr;
+  gap: 26px;
+  justify-content: start;
 }
 
 .poem-row-bottom {
-  grid-template-columns: 0.95fr 1.05fr;
-  gap: 30px;
+  grid-template-columns: 1fr 430px;
+  gap: 34px;
+  justify-content: end;
 }
 
 .poem {
   margin: 0;
   text-align: center;
-  font-size: clamp(1.6rem, 3.2vw, 2.2rem);
-  line-height: 1.8;
+  font-size: clamp(1.2rem, 2.4vw, 1.6rem);
+  line-height: 1.85;
   color: var(--text-strong);
+  white-space: nowrap;
+}
+
+.poem-row-top .poem {
+  align-self: start;
+  padding-top: 8px;
+}
+
+.poem-row-bottom .poem {
+  justify-self: center;
 }
 
 .mini-scene {
   position: relative;
   overflow: hidden;
-  min-height: 170px;
+  min-height: 230px;
   background: #f5f5f3;
   box-shadow: var(--shadow);
 }
 
 .mini-scene-left {
-  width: min(100%, 245px);
+  width: 430px;
+  min-height: 255px;
 }
 
 .mini-scene-right {
-  width: min(100%, 280px);
-  justify-self: end;
+  width: 430px;
+  min-height: 250px;
+  justify-self: start;
 }
 
 .mini-photo {
@@ -225,7 +243,7 @@ a {
 .link-column {
   display: inline-grid;
   gap: 18px;
-  margin-bottom: 108px;
+  margin-bottom: 240px;
 }
 
 .link-column a {
@@ -237,7 +255,7 @@ a {
 
 .statement {
   display: grid;
-  gap: 64px;
+  gap: 156px;
   justify-items: center;
 }
 
@@ -257,7 +275,7 @@ a {
 }
 
 .quote-section {
-  min-height: 320px;
+  min-height: 680px;
   display: grid;
   place-items: center;
 }
@@ -274,15 +292,15 @@ a {
 }
 
 .section-label {
-  margin: 0 0 54px;
+  margin: 0 0 120px;
   font-size: clamp(1.7rem, 3vw, 2.2rem);
   font-weight: 500;
 }
 
 .contact-box {
   display: grid;
-  gap: 28px;
-  max-width: 620px;
+  gap: 52px;
+  max-width: 420px;
   margin: 0 auto;
   font-size: 1.15rem;
   line-height: 1.9;
@@ -294,16 +312,15 @@ a {
 }
 
 .guideline-copy {
-  max-width: 760px;
-  margin: 0 auto 110px;
+  max-width: 500px;
+  margin: 0 auto 280px;
   font-size: 1.06rem;
-  line-height: 1.75;
+  line-height: 1.92;
   text-align: center;
-  letter-spacing: 0.02em;
 }
 
 .guideline-copy p {
-  margin: 0 0 54px;
+  margin: 0 0 98px;
 }
 
 [data-reveal] {
@@ -318,6 +335,13 @@ a {
 }
 
 @media (max-width: 760px) {
+  :root {
+    --section-space: 78px;
+    --hero-photo-width: 270px;
+    --mini-photo-left-width: 240px;
+    --mini-photo-right-width: 280px;
+  }
+
   .site-header {
     width: min(100% - 24px, 980px);
     padding-top: 14px;
@@ -349,11 +373,11 @@ a {
   }
 
   .page {
-    width: min(100% - 24px, 860px);
+    width: min(100% - 24px, 500px);
   }
 
   .section {
-    padding: 58px 0;
+    padding: 180px 0;
   }
 
   .poem-row,
@@ -365,11 +389,25 @@ a {
 
   .poem-row-top,
   .poem-row-bottom {
-    gap: 30px;
+    gap: 96px;
   }
 
-  .scene-card-large {
-    width: min(100%, 360px);
+  .poem {
+    font-size: clamp(1.2rem, 6vw, 1.9rem);
+    line-height: 1.9;
+    white-space: normal;
+  }
+
+  .poem-row-top,
+  .poem-row-bottom {
+    grid-template-columns: 1fr;
+    justify-content: center;
+  }
+
+  .mini-scene-left,
+  .mini-scene-right {
+    width: min(100%, 340px);
+    min-height: 210px;
   }
 
   .mini-scene-right {
@@ -377,12 +415,12 @@ a {
   }
 
   .guideline-copy {
-    max-width: 540px;
-    font-size: 0.98rem;
-    line-height: 1.82;
+    max-width: 430px;
+    font-size: 1rem;
+    line-height: 2;
   }
 
   .link-column {
-    margin-bottom: 82px;
+    margin-bottom: 180px;
   }
 }
