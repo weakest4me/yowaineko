@@ -324,16 +324,16 @@ a {
 }
 
 .guideline-copy {
-  max-width: 500px;
+  max-width: 680px;
   margin: 0 auto 280px;
-  font-size: 0.96rem;
-  line-height: 2.02;
+  font-size: 1.06rem;
+  line-height: 1.82;
   text-align: center;
   opacity: 0.92;
 }
 
 .guideline-copy p {
-  margin: 0 0 98px;
+  margin: 0 0 82px;
 }
 
 [data-reveal] {
@@ -428,9 +428,9 @@ a {
   }
 
   .guideline-copy {
-    max-width: 430px;
-    font-size: 0.92rem;
-    line-height: 2.04;
+    max-width: 520px;
+    font-size: 0.98rem;
+    line-height: 1.9;
   }
 
   .link-column {
