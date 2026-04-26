@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Yowai Neko</title>
+    <meta
+      name="description"
+      content="プロフィール、リンク、活動内容を1ページにまとめたシンプルなポートフォリオサイト。"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Zen+Old+Mincho:wght@500;700&family=Manrope:wght@400;500;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="page-shell">
+      <header class="site-header">
+        <a class="brand" href="#top">Yowai Neko</a>
+        <button
+          class="menu-toggle"
+          type="button"
+          aria-expanded="false"
+          aria-controls="site-nav"
+        >
+          Menu
+        </button>
+        <nav id="site-nav" class="site-nav" aria-label="グローバルナビゲーション">
+          <a href="#about">About</a>
+          <a href="#links">Links</a>
+          <a href="#works">Works</a>
+          <a href="#contact">Contact</a>
+        </nav>
+      </header>
+
+      <main id="top">
+        <section class="hero">
+          <div class="hero-copy">
+            <p class="eyebrow">Personal Site / Profile / Links</p>
+            <h1>
+              余白のある見せ方で、
+              <span>あなたらしさ</span>
+              が伝わるページへ。
+            </h1>
+            <p class="hero-text">
+              SNS、作品、活動情報、連絡先をひとつにまとめた、静かな存在感のあるプロフィールサイトです。
+            </p>
+            <div class="hero-actions">
+              <a class="button primary" href="#links">リンクを見る</a>
+              <a class="button secondary" href="#contact">お問い合わせ</a>
+            </div>
+          </div>
+
+          <aside class="profile-card">
+            <div class="avatar-frame">
+              <div class="avatar-core">YN</div>
+            </div>
+            <p class="status">currently open for collaboration</p>
+            <h2>@yourname</h2>
+            <p class="profile-summary">
+              イラスト、制作活動、個人プロジェクトなどを発信するためのミニマルなホームページ。
+            </p>
+            <ul class="profile-meta">
+              <li>Based in Japan</li>
+              <li>Static site / GitHub Pages ready</li>
+              <li>Custom domain compatible</li>
+            </ul>
+          </aside>
+        </section>
+
+        <section id="about" class="content-block">
+          <div class="section-heading">
+            <p class="eyebrow">About</p>
+            <h2>このサイトでできること</h2>
+          </div>
+          <div class="about-grid">
+            <article>
+              <h3>プロフィールを整える</h3>
+              <p>
+                名前、肩書き、活動内容、世界観をシンプルに見せて、訪問者が一目で人物像をつかめる構成です。
+              </p>
+            </article>
+            <article>
+              <h3>リンクをひとつに集約</h3>
+              <p>
+                SNS、ショップ、ポートフォリオ、配布ページなどをまとめて、案内ページとして使えます。
+              </p>
+            </article>
+            <article>
+              <h3>将来の拡張に対応</h3>
+              <p>
+                独自ドメイン、お問い合わせフォーム、実績追加など、あとから育てやすい静的サイト構成にしています。
+              </p>
+            </article>
+          </div>
+        </section>
+
+        <section id="links" class="content-block">
+          <div class="section-heading">
+            <p class="eyebrow">Links</p>
+            <h2>よく使う導線</h2>
+          </div>
+          <div class="link-stack">
+            <a href="https://x.com/" target="_blank" rel="noreferrer">
+              <span>X / Twitter</span>
+              <strong>日々の投稿を見る</strong>
+            </a>
+            <a href="https://www.instagram.com/" target="_blank" rel="noreferrer">
+              <span>Instagram</span>
+              <strong>写真やビジュアルをまとめる</strong>
+            </a>
+            <a href="https://github.com/" target="_blank" rel="noreferrer">
+              <span>GitHub</span>
+              <strong>制作物やコードを公開する</strong>
+            </a>
+            <a href="#works">
+              <span>Portfolio</span>
+              <strong>作品や活動実績を見る</strong>
+            </a>
+          </div>
+        </section>
+
+        <section id="works" class="content-block">
+          <div class="section-heading">
+            <p class="eyebrow">Works</p>
+            <h2>活動や作品の見せ方</h2>
+          </div>
+          <div class="works-grid">
+            <article class="work-card">
+              <p class="work-label">Project 01</p>
+              <h3>ポートフォリオ紹介</h3>
+              <p>
+                代表作や制作コンセプトを短くまとめて、外部ポートフォリオへの入り口にできます。
+              </p>
+            </article>
+            <article class="work-card">
+              <p class="work-label">Project 02</p>
+              <h3>イベント告知</h3>
+              <p>
+                展示、頒布、配信予定などを更新して、トップページだけで近況が伝わるようにできます。
+              </p>
+            </article>
+            <article class="work-card">
+              <p class="work-label">Project 03</p>
+              <h3>依頼受付ページ</h3>
+              <p>
+                料金目安や対応内容を追加して、お問い合わせフォームとつなげる構成にも発展できます。
+              </p>
+            </article>
+          </div>
+        </section>
+
+        <section id="contact" class="content-block contact-block">
+          <div class="section-heading">
+            <p class="eyebrow">Contact</p>
+            <h2>お問い合わせ導線</h2>
+          </div>
+          <div class="contact-layout">
+            <div class="contact-copy">
+              <p>
+                いまは静的サイトとして公開できる構成です。すぐに連絡を受けたい場合は `mailto:` リンクを使い、あとから
+                Formspree などを接続すればフォーム化できます。
+              </p>
+              <a class="button primary" href="mailto:hello@example.com">
+                hello@example.com に連絡する
+              </a>
+            </div>
+
+            <form class="contact-form" data-form-state="idle">
+              <label>
+                <span>お名前</span>
+                <input type="text" name="name" placeholder="山田 太郎" />
+              </label>
+              <label>
+                <span>メールアドレス</span>
+                <input type="email" name="email" placeholder="name@example.com" />
+              </label>
+              <label>
+                <span>内容</span>
+                <textarea
+                  name="message"
+                  rows="5"
+                  placeholder="将来的に Formspree や Google Forms と連携できます。"
+                ></textarea>
+              </label>
+              <button class="button secondary" type="submit">フォーム準備中</button>
+              <p class="form-note" aria-live="polite"></p>
+            </form>
+          </div>
+        </section>
+      </main>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
