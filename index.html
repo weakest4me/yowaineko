@@ -4,9 +4,22 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>やわらかなばしょ</title>
+    <meta name="description" content="やわらかなばしょへ , あなたと ." />
+    <meta property="og:title" content="やわらかなばしょ" />
+    <meta property="og:description" content="やわらかなばしょへ , あなたと ." />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://yawaineko.me/" />
     <meta
-      name="description"
-      content="やわらかなばしょへ , あなたと ."
+      property="og:image"
+      content="https://yawaineko.me/assets/scene-wide.png"
+    />
+    <meta property="og:site_name" content="やわらかなばしょ" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="やわらかなばしょ" />
+    <meta name="twitter:description" content="やわらかなばしょへ , あなたと ." />
+    <meta
+      name="twitter:image"
+      content="https://yawaineko.me/assets/scene-wide.png"
     />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -18,7 +31,7 @@
   </head>
   <body>
     <header class="site-header">
-      <a class="site-title" href="/">yawaineko</a>
+      <a class="site-title" href="./">yawaineko</a>
       <button
         class="menu-toggle"
         type="button"
@@ -28,10 +41,10 @@
         menu
       </button>
       <nav id="site-nav" class="site-nav" aria-label="ページ内リンク">
-        <a href="/about/">about</a>
-        <a href="/links/">links</a>
-        <a href="/contact/">contact</a>
-        <a href="/guideline/">guideline</a>
+        <a href="about/" data-dir-link="about">about</a>
+        <a href="links/" data-dir-link="links">links</a>
+        <a href="contact/" data-dir-link="contact">contact</a>
+        <a href="guideline/" data-dir-link="guideline">guideline</a>
       </nav>
     </header>
 
@@ -55,10 +68,10 @@
 
       <section class="section home-links" data-reveal>
         <div class="portal-list">
-          <a class="portal-link" href="/about/">about</a>
-          <a class="portal-link" href="/links/">links</a>
-          <a class="portal-link" href="/contact/">contact</a>
-          <a class="portal-link" href="/guideline/">guideline</a>
+          <a class="portal-link" href="about/" data-dir-link="about">about</a>
+          <a class="portal-link" href="links/" data-dir-link="links">links</a>
+          <a class="portal-link" href="contact/" data-dir-link="contact">contact</a>
+          <a class="portal-link" href="guideline/" data-dir-link="guideline">guideline</a>
         </div>
       </section>
     </main>
