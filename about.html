@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>やわらかなばしょ</title>
+    <title>about | yawaineko</title>
     <meta
       name="description"
       content="やわいねこの記録を静かにまとめた、白い余白のある個人サイト。"
@@ -28,33 +28,49 @@
         menu
       </button>
       <nav id="site-nav" class="site-nav" aria-label="ページ内リンク">
-        <a href="about.html">about</a>
+        <a class="is-active" href="about.html">about</a>
         <a href="links.html">links</a>
         <a href="contact.html">contact</a>
         <a href="guideline.html">guideline</a>
       </nav>
     </header>
 
-    <main class="page home-page">
-      <section class="hero section">
-        <div class="scene-card scene-card-large" data-reveal>
-          <img
-            class="scene-photo"
-            src="assets/scene-vertical.png"
-            alt="やわらかな白い庭の風景"
-          />
-          <div class="scene-overlay"></div>
-          <p class="scene-copy scene-copy-main">やわらかなばしょ</p>
-        </div>
-        <p class="handle" data-reveal>@yawaineko</p>
+    <main class="page">
+      <section class="section subpage-intro" data-reveal>
+        <h1 class="section-label">about</h1>
       </section>
 
-      <section class="section home-links" data-reveal>
-        <div class="portal-list">
-          <a class="portal-link" href="about.html">about</a>
-          <a class="portal-link" href="links.html">links</a>
-          <a class="portal-link" href="contact.html">contact</a>
-          <a class="portal-link" href="guideline.html">guideline</a>
+      <section class="section poem-layout subpage-section">
+        <div class="poem-row poem-row-top" data-reveal>
+          <div class="mini-scene mini-scene-left">
+            <img
+              class="mini-photo"
+              src="assets/scene-door.png"
+              alt="木漏れ日が差し込む白い壁と扉"
+            />
+            <div class="mini-overlay"></div>
+          </div>
+          <p class="poem">
+            こもれびがほほえむ ,
+            <br />
+            そんなばしょ .
+          </p>
+        </div>
+
+        <div class="poem-row poem-row-bottom" data-reveal>
+          <p class="poem">
+            わたし , やわいは ,
+            <br />
+            ここにいます .
+          </p>
+          <div class="mini-scene mini-scene-right">
+            <img
+              class="mini-photo"
+              src="assets/scene-wide.png"
+              alt="木と白い中庭の風景"
+            />
+            <div class="mini-overlay"></div>
+          </div>
         </div>
       </section>
     </main>
