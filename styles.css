@@ -129,6 +129,11 @@ a {
   padding-bottom: 120px;
 }
 
+.home-quote {
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
+
 .scene-card {
   position: relative;
   overflow: hidden;
