@@ -88,6 +88,12 @@ a {
   opacity: 0.86;
 }
 
+.site-nav a.is-active {
+  opacity: 1;
+  text-decoration: underline;
+  text-underline-offset: 0.18em;
+}
+
 .site-nav a:hover,
 .site-nav a:focus-visible,
 .contact-link:hover,
@@ -105,6 +111,10 @@ a {
   padding-bottom: 280px;
 }
 
+.home-page {
+  min-height: 100vh;
+}
+
 .section {
   padding: 240px 0;
 }
@@ -112,6 +122,11 @@ a {
 .hero {
   padding-top: 140px;
   text-align: center;
+}
+
+.home-links {
+  padding-top: 120px;
+  padding-bottom: 120px;
 }
 
 .scene-card {
@@ -265,6 +280,19 @@ a {
   text-underline-offset: 0.16em;
 }
 
+.portal-list {
+  display: grid;
+  gap: 26px;
+  justify-items: center;
+}
+
+.portal-link {
+  font-family: "Manrope", sans-serif;
+  font-size: 1rem;
+  text-decoration: underline;
+  text-underline-offset: 0.18em;
+}
+
 .statement {
   display: grid;
   gap: 156px;
@@ -291,6 +319,15 @@ a {
   min-height: 680px;
   display: grid;
   place-items: center;
+}
+
+.subpage-intro {
+  padding-top: 140px;
+  padding-bottom: 80px;
+}
+
+.subpage-section {
+  padding-top: 40px;
 }
 
 .quote {
